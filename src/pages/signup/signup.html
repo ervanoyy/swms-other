@@ -1,0 +1,52 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            SWMS <br/> Smart Waste Management System
+          </ion-title>
+      </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list></ion-list>
+ <img src ="../assets/logoswms.png"/>
+  <ion-infinite-scroll threshold="100px" id="infinite-scroll"></ion-infinite-scroll>
+  <ion-card>
+<!-- <ion-item>
+  <ion-label color = "primary" position="stacked">Nama</ion-label>
+  <ion-input  placeholder="Masukan nama" ></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label color = "primary" position="stacked">Email</ion-label>
+    <ion-input  placeholder="Masukan email" ></ion-input>
+  </ion-item>
+
+<ion-item>
+      <ion-label color = "primary" position="stacked">Nomor Telepon</ion-label>
+      <ion-input  placeholder="Masukan nomor telepon" ></ion-input>
+  </ion-item> -->
+
+  <ion-item>
+      <ion-label color = "primary" position="stacked">Email</ion-label>
+      <ion-input placeholder="Masukan email" type="text"  #username></ion-input>
+    </ion-item>
+
+<ion-item>
+  <ion-label color = "primary" position="stacked">Kata Sandi</ion-label>
+  <ion-input placeholder="Masukan kata sandi" type="password" #password></ion-input>
+</ion-item>
+<!-- 
+<ion-item>
+    <ion-label color = "primary" position="stacked">Konfirmasi Kata Sandi</ion-label>
+    <ion-input  type="password"placeholder="Konfirmasi kata sandi" ></ion-input>
+  </ion-item> -->
+
+  <button block ion-button shape = round size= small expand="full" (click)="doLogin()">Masuk</button>
+</ion-card>
+</ion-content>
